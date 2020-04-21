@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Calculator" icon-name="custom:custom34">
+        <lightning-input value = {number1} 
+                label="Number 1" 
+                name= "number1"
+                onchange={handleChangeEvent}
+                placeholder="input number here.."> 
+        </lightning-input>
+
+        <lightning-input value = {number2} 
+               label="Number 2" 
+               name="number2"
+               onchange={handleChangeEvent}
+               placeholder="input number here..">    
+        </lightning-input>
+
+        <lightning-button label="Sum" variant ="brand" onclick={dosum}>    
+        </lightning-button>
+        &nbsp;
+        <lightning-button label="Subs"  variant ="brand" onclick={dosubs}>  
+        </lightning-button>
+        &nbsp;
+        <lightning-button label="Multi"  variant ="brand" onclick={domulti}>  
+        </lightning-button>
+        &nbsp;
+        <lightning-button label="Div"  variant ="brand" onclick={dodiv}>  
+        </lightning-button>
+    </lightning-card>
+</template>
