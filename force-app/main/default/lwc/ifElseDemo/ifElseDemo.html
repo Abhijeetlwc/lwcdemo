@@ -1,0 +1,33 @@
+<template>
+    <div>
+
+        <template if:true={isJerry}>
+            <img src="http://www.konfest.com/wp-content/uploads/2019/05/Konfest-PNG-JPG-Image-Pic-Photo-Free-Download-Royalty-Unlimited-clip-art-sticker-Tom-Jerry-Cartoons-14.png"
+             height="200"
+             width="200"/>
+        </template>
+
+        
+        <template if:false={isTom}>
+            <img src="https://www.cartoon-clipart.co/amp/images/september122.gif"
+             height="200"
+             width="200"/>
+        </template>
+        
+        
+       
+    </div>
+
+    <div>
+        
+    </div>
+    <div class="slds-m-around_small">
+        <lightning-button label="Show Tom" variant="brand" onclick={showTom}>
+        </lightning-button>
+
+        <lightning-button label="Show Jerry" variant="brand" onclick={showJerry}>
+        </lightning-button>
+
+    </div>
+
+</template>

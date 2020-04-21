@@ -1,0 +1,29 @@
+{
+  "orgName": "Demo company",
+  "edition": "Developer",
+  "features": [
+    "Communities",
+    "MultiCurrency",
+    "ContactsToMultipleAccounts",
+    "CascadeDelete",
+    "Communities",
+    "PersonAccounts",
+    "StateAndCountryPicklist",
+    "Entitlements",
+    "LiveAgent"
+  ],
+  "settings": {
+    "orgPreferenceSettings": {
+      "networksEnabled" : true,
+      "s1DesktopEnabled" : true,
+      "s1EncryptStoragePref2" : false
+
+    },
+    "omniChannelSettings": {
+      "enableOmniChannel" : true
+    },
+    "caseSettings": {
+      "systemUserEmail" : "abhijeetlwc@gmail.com"
+    }
+  }
+}
