@@ -25,5 +25,41 @@
         &nbsp;
         <lightning-button label="Div"  variant ="brand" onclick={dodiv}>  
         </lightning-button>
+
+        <div class="slds-m-around_medium">
+               <!--- <template if:true={result}> -->
+                Sum is : 
+                <lightning-formatted-number value={result}>
+                    
+                </lightning-formatted-number>
+                <!--</template> -->
+        </div>
+        
+        <div class="slds-m-around_medium">
+           
+                Subtraction is : 
+                <lightning-formatted-number value={result1}>
+                    
+                </lightning-formatted-number>
+            
+        </div>
+        <div class="slds-m-around_medium">
+           
+                Multiplication is : 
+                <lightning-formatted-number value={result2}>
+                    
+                </lightning-formatted-number>
+           
+        </div>
+        <div class="slds-m-around_medium">
+           
+                Division is : 
+                <lightning-formatted-number value={result3}>
+                    
+                </lightning-formatted-number>
+           
+        </div>
+        
+
     </lightning-card>
 </template>

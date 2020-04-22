@@ -1,3 +1,3 @@
 <aura:application extends="force:slds">
-     <c:calculatorCmp/> 
+     <c:slotsWrapper/>
 </aura:application>
