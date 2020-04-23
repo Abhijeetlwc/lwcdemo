@@ -1,11 +1,9 @@
 <template>
-    <div class="slds-m-around_small">
-        <strong>
-            I am inside parent
-        </strong>
-        <br/>
-        <c-child-comp message="Parent to Child" pageno="23"></c-child-comp>
-        <br/>
-        <c-grandchild></c-grandchild>
+    <div class="slds-m-around_small" onsimple={handleSimpleEvent}>
+        <strong>I am inside parent</strong>
+            <c-child-comp 
+                  message="Message from Parent" 
+                  pageno="37"
+            ></c-child-comp>
     </div>
 </template>
