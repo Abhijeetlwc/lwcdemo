@@ -15,4 +15,8 @@ export default class ParentComp extends LightningElement {
         console.log(' Message is ', event.target.message);
         console.log(' Page No. is ', event.target.pageno);
     }
+
+    handleClick(){
+        this.template.querySelector('c-child-comp').childMethod(' After API function', 100);
+    }
 }

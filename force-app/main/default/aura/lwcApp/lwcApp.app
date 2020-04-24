@@ -1,3 +1,4 @@
 <aura:application extends="force:slds">
-     <c:grandchild/>
+     <c:auralwc>
+     </c:auralwc>
 </aura:application>
