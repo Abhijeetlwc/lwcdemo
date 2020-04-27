@@ -1,0 +1,21 @@
+<template>
+    <div class="slds-m-around_small">
+        <lightning-input value={p} label="P Amount">
+            
+        </lightning-input>
+        <lightning-input value={t} label="Term">
+            
+        </lightning-input>
+        <lightning-input value={r} 
+                         type="number"
+                         formatter="percent-fixed"
+                         step="1"
+                         label="Rate">
+        </lightning-input>
+        <br/>
+        <lightning-button label="Calculate SI"
+                          variant ="brand"
+                          onclick={calculateSI}>
+        </lightning-button>
+    </div>
+</template>

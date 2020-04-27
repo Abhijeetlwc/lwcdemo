@@ -1,4 +1,3 @@
 <aura:application extends="force:slds">
-     <c:auralwc>
-     </c:auralwc>
+    <c:quickCase/>
 </aura:application>
