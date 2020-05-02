@@ -1,3 +1,4 @@
 <aura:application extends="force:slds">
-    <c:quickCase/>
+    <c:wireMethod/>
+    <c:apeximperative></c:apeximperative>
 </aura:application>

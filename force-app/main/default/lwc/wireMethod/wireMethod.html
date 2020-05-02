@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Case Details" icon-name="standard:case">
+        <div class="slds-m-around_small">
+            <div>
+                <lightning-input value={subject}
+                                 label="Search case by Subject"
+                                 onchange={handleChange}>
+                    
+                </lightning-input>
+            </div>
+            <template for:each={records} for:item="item">
+                <p key={item.id}>
+                    {item.Subject} <br/>
+                    {item.Status}
+                </p>
+            </template>
+            <template if:false={records}>
+                There is no matching records
+            </template>
+            <template if:true={errors}>
+                There is an error while fetching the cases
+            </template>
+        </div>
+    </lightning-card>
+</template>
