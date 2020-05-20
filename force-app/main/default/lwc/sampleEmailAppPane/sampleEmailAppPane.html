@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Sample Email" icon-name="action:email">
+        <div class="slds-m-around_small">
+            <template for:each={people.from} for:item="from">
+                <div key={from.email}>
+                    {from.email}
+                </div>
+            </template>
+            <template for:each={people.to} for:item="to">
+                <div key={to.email}>
+                    {to.email}
+                </div>
+            </template>
+        </div>
+        <div>
+            {subject}
+        </div>
+        <div>
+            {massageBody}
+        </div>
+    </lightning-card>
+</template>
